@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+html,
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    /* font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5; */
+
+    /* font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.2; */
+
+    /* Cyan-Blue */
+    /* color: rgb(12, 116, 187); */
+    /* Orange */
+    /* color: rgb(249, 147, 31); */
+    /* color: rgb(24, 166, 159); */
+}
+
+/* Slide Out */
+.slideout {
+    position: fixed;
+    right: 0;
+    top: 15%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+#hand {
+    background: #e6eff7;
+    cursor: pointer;
+    border-radius: 100px 0 0 100px;
+    padding: 10px 10px 10px 15px;
+    border-right: 3px solid rgb(255, 128, 0);
+}
+
+#hand .bell {
+    width: 2rem;
+    animation: shake 1s linear infinite;
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(10deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    75% {
+        transform: rotate(-10deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+#sticky-button {
+    background: #e6eff7;
+    width: 320px;
+    margin-right: -320px;
+    transition: margin 0.2s ease-out;
+    position: relative;
+}
+
+#sticky-button.active {
+    margin-right: 0px;
+    padding: 0px 10px;
+    transition: margin 0.2s ease-out;
+}
+
+.slideout-head {
+    padding: 0px 5px;
+    margin: 5px 0px;
+}
+
+.slideout .card-description {
+    margin: 0;
+}
+
+.slideout-link {
+    text-decoration: none;
+    color: rgb(255, 128, 0);
+}
+
+.slideout-heading {
+    margin: 5px 0;
+}
+
+.slideout .card {
+    padding: 5px;
+    border-bottom: 2px solid #d3dbe2;
+    color: #74787c;
+}
+
+.slideout .card-heading {
+    margin: 5px 0px;
+}
+
+.slideout .card-date,
+.slideout .card-time {
+    margin: 5px 10px;
+    display: inline-block;
+}
+
+/* ======= */
+
+/* Hero Carousel Banner */
+
+.carousel .carousel-item,
+.carousel .carousel-item-hidden {
+    display: none;
+    /* hide all slide images not currently being viewed */
+}
+
+.carousel .carousel-item-visible {
+    display: block;
+    /* show current slide image */
+    animation: fadeVisibility 0.5s;
+    /* for fading effect when switching between slides */
+}
+
+.carousel .carousel-item img {
+    width: 100%;
+}
+
+/* ======= */
+
+/* Impact */
+.impact {
+    background-color: rgba(249, 147, 29, 0.25);
+}
+
+.impact-heading {
+    text-align: center;
+    font-size: 40px;
+    padding: 50px 0;
+}
+
+.count {
+    line-height: 100px;
+    color: white;
+    margin-left: 30px;
+    font-size: 25px;
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-around;
+    align-items: flex-start;
+    font-size: 2rem;
+    padding: 50px 20px;
+}
+
+.cnt {
+    display: inline-block;
+}
+
+.lorem {
+    text-align: center;
+    margin: 30px;
+}
+
+/* ======= */
+
+/* About US */
+.about {
+    /* height: 100vh; */
+    padding: 20px 50px;
+    background-color: rgba(14, 116, 188, 0.25);
+}
+
+.about-madeit,
+.about-iiit {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.img-iiit,
+.img-madeit {
+    width: 40vw;
+}
+
+.desc-madeit,
+.desc-iiit {
+    padding: 0px 20px;
+}
+
+
+/* ======== */
+
+/* ROAD Map */
+.roadmap {
+    background-color: rgba(20, 167, 157, 0.25);
+    padding: 20px;
+}
+
+.item {
+    display: flex;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 50px;
+    border: 2px solid black;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.step {
+    display: flex;
+}
+
+.step h1,
+.step p {
+    margin: 0;
+}
+
+/* ======== */
+
+/* Eco system */
+.ecosys {
+    background-color: rgba(14, 116, 188, 0.25);
+}
+
+.ecosys img {
+    width: 100vw;
+}
+
+/* ========== */
+
+/* Partners */
+.partners {
+    background-color: rgba(249, 147, 29, 0.25);
+}
+
+.com {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: space-around;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.com img {
+    width: 25vw;
+    margin: 25px 10px;
+}
+
+/* ======== */
+
+/* testmonials */
+.testmonials {
+    background-color: rgba(20, 167, 157, 0.25);
+    height: 70vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.caro {
+    overflow: hidden;
+}
+
+.sli {
+    width: 40vw;
+    height: 300px;
+    position: absolute;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.sli .carddata {
+    padding: 0px 50px;
+}
+
+/* =========== */

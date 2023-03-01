@@ -1,0 +1,8 @@
+.sli {
+    width: 40vw;
+    height: 300px;
+    position: absolute;
+    text-align: center;
+    border: 2px solid black;
+    transition: all 0.3s ease-in-out;
+}
