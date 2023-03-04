@@ -4,20 +4,25 @@ html,
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
-    /* font-size: 18px;
-    font-weight: 400;
-    line-height: 1.5; */
-
-    /* font-size: 1.25rem;
-    font-weight: 500;
-    line-height: 1.2; */
-
     /* Cyan-Blue */
     /* color: rgb(12, 116, 187); */
     /* Orange */
     /* color: rgb(249, 147, 31); */
     /* color: rgb(24, 166, 159); */
 }
+
+.headings {
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+/* .body-text {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+} */
+
 
 /* Slide Out */
 .slideout {
@@ -30,6 +35,7 @@ body {
     align-content: space-around;
     justify-content: space-around;
     align-items: flex-start;
+    z-index: 1;
 }
 
 #hand {
@@ -79,6 +85,22 @@ body {
     margin-right: 0px;
     padding: 0px 10px;
     transition: margin 0.2s ease-out;
+    overflow: overlay;
+    height: 70vh;
+}
+
+.slideout ::-webkit-scrollbar {
+    width: 8px;
+}
+
+.slideout ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #8f969b;
+    border-radius: 10px;
+}
+
+.slideout ::-webkit-scrollbar-thumb {
+    background: rgb(255, 128, 0);
+    border-radius: 10px;
 }
 
 .slideout-head {
@@ -138,15 +160,90 @@ body {
 
 /* ======= */
 
+/* About US */
+.about {
+    /* background-color: rgba(14, 116, 188, 0.25); */
+    background-color: #c1dbfd;
+    color: #282828;
+    padding: 4rem;
+}
+
+.about-madeit,
+.about-iiit {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.about-madeit {
+    margin-top: 4rem;
+}
+
+.img-iiit,
+.img-madeit {
+    width: 40vw;
+}
+
+.img-madeit {
+    border-radius: 10px;
+    border: 0px;
+    height: 350px;
+}
+
+.desc {
+    color: #585858;
+}
+
+.desc-iiit {
+    padding-right: 3rem;
+}
+
+.desc-madeit {
+    padding-left: 3rem;
+}
+
+.about-iiit {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+}
+
+.trans-right {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    transition: all 1.5s;
+}
+
+.about-madeit {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(100%);
+}
+
+.trans-left {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    transition: all 1.5s;
+}
+
+/* ======== */
+
 /* Impact */
 .impact {
-    background-color: rgba(249, 147, 29, 0.25);
+    /* background-color: rgba(249, 148, 31, 0.25); */
+    background-color: #FFD3B4;
+    color: #343434;
 }
 
 .impact-heading {
     text-align: center;
     font-size: 40px;
     padding: 50px 0;
+    color: #292929;
 }
 
 .count {
@@ -171,45 +268,51 @@ body {
     display: inline-block;
 }
 
-.lorem {
+.metric {
     text-align: center;
     margin: 30px;
+    transform: scale(0.5);
+}
+
+.metric-show {
+    transform: scale(1);
+}
+
+.metric-show:nth-of-type(1) {
+    transition: transform 0.9s cubic-bezier(0.32, 0, 0.67, 0);
+}
+
+.metric-show:nth-of-type(2) {
+    transition: transform 0.9s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+.metric-show:nth-of-type(3) {
+    transition: transform 0.9s cubic-bezier(0.64, 0, 0.78, 0);
+}
+
+.metric-show:nth-of-type(4) {
+    transition: transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.metric-show:nth-of-type(5) {
+    transition: transform 0.9s cubic-bezier(0.55, 0, 1, 0.45);
+}
+
+.metric-show:nth-of-type(6) {
+    transition: transform 0.9s cubic-bezier(0, 0.55, 0.45, 1);
+}
+
+.metric-show:nth-of-type(7) {
+    transition: transform 0.9s cubic-bezier(.72, -0.98, .24, 1.83);
 }
 
 /* ======= */
 
-/* About US */
-.about {
-    /* height: 100vh; */
-    padding: 20px 50px;
-    background-color: rgba(14, 116, 188, 0.25);
-}
-
-.about-madeit,
-.about-iiit {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
-.img-iiit,
-.img-madeit {
-    width: 40vw;
-}
-
-.desc-madeit,
-.desc-iiit {
-    padding: 0px 20px;
-}
-
-
-/* ======== */
-
 /* ROAD Map */
 .roadmap {
-    background-color: rgba(20, 167, 157, 0.25);
+    /* background-color: rgba(20, 166, 156, 0.25); */
+    background-color: #AAF4ED;
+    color: #343434;
     padding: 20px;
 }
 
@@ -238,7 +341,9 @@ body {
 
 /* Eco system */
 .ecosys {
-    background-color: rgba(14, 116, 188, 0.25);
+    /* background-color: rgba(14, 116, 188, 0.25); */
+    background-color: #c1dbfd;
+    color: #000000;
 }
 
 .ecosys img {
@@ -249,7 +354,9 @@ body {
 
 /* Partners */
 .partners {
-    background-color: rgba(249, 147, 29, 0.25);
+    /* background-color: rgba(249, 147, 29, 0.25); */
+    background-color: rgba(254, 168, 103, 0.5);
+    color: #000001;
 }
 
 .com {
@@ -270,7 +377,9 @@ body {
 
 /* testmonials */
 .testmonials {
-    background-color: rgba(20, 167, 157, 0.25);
+    /* background-color: rgba(20, 167, 157, 0.25); */
+    background-color: rgba(26, 200, 188, 0.5);
+    color: #00212B;
     height: 70vh;
     position: relative;
     overflow: hidden;
