@@ -1,3 +1,46 @@
+// ======== NavBar ==========
+document.addEventListener("DOMContentLoaded", function () {
+  // If a link has a dropdown, add sub menu toggle.
+  var dropdownLinks = document.querySelectorAll("nav ul li a:not(:only-child)");
+  dropdownLinks.forEach(function (dropdownLink) {
+    dropdownLink.addEventListener("click", function (e) {
+      var siblingDropdown = this.nextElementSibling;
+      siblingDropdown.style.display =
+        siblingDropdown.style.display === "block" ? "none" : "block";
+      // Close one dropdown when selecting another
+      var allDropdowns = document.querySelectorAll(".nav-dropdown");
+      allDropdowns.forEach(function (dropdown) {
+        if (dropdown !== siblingDropdown) {
+          dropdown.style.display = "none";
+        }
+      });
+      e.stopPropagation();
+    });
+  });
+
+  // Clicking away from dropdown will remove the dropdown class
+  document.addEventListener("click", function () {
+    var allDropdowns = document.querySelectorAll(".nav-dropdown");
+    allDropdowns.forEach(function (dropdown) {
+      dropdown.style.display = "none";
+    });
+  });
+
+  // Toggle open and close nav styles on click
+  var navToggle = document.getElementById("nav-toggle");
+  var navUl = document.querySelector("nav ul");
+  navToggle.addEventListener("click", function () {
+    navUl.style.display = navUl.style.display === "block" ? "none" : "block";
+  });
+
+  // Hamburger to X toggle
+  navToggle.addEventListener("click", function () {
+    navToggle.classList.toggle("active");
+  });
+});
+
+// ==========================
+
 // ======== Slide Out =======
 document.getElementById("hand").addEventListener("click", function () {
   document.getElementById("sticky-button").classList.toggle("active");
