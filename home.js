@@ -154,7 +154,6 @@ setInterval(() => {
     if (indx === (curr_slide + 1) % len) {
       sli.style.transform = sli.style.transform + ` scale(1.2)`;
       sli.style.opacity = "1";
-      sli.style.backgroundColor = "rgba(20, 167, 157)";
     }
   });
   curr_slide = (curr_slide + 1) % len;
