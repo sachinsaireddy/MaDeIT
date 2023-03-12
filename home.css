@@ -802,6 +802,7 @@ article {
 /* Eco system */
 .ecosys {
     color: black;
+    padding: 0px 100px;
 }
 
 .ecosys img {
@@ -822,7 +823,7 @@ article {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     align-items: center;
     color: white;
     width: 320px;
@@ -839,7 +840,7 @@ article {
 .eco-icon {
     width: 300px;
     height: 300px;
-    margin: 0px 20px;
+    margin: 15px;
     background-color: white;
     border-radius: 50%;
     display: flex;
@@ -854,9 +855,18 @@ article {
 }
 
 .eco-headings {
-    font-size: 2.5rem;
+    font-size: 1.7rem;
     font-weight: 500;
     line-height: 1.4;
+    padding: 0px 10px;
+}
+
+.eco-card-content{
+    padding-top: 15px;
+}
+
+.eco-disc{
+    margin-top: 20px;
 }
 
 .eco-margin-top {
