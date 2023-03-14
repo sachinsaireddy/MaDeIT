@@ -12,6 +12,21 @@ body {
     line-height: 1.6;
 }
 
+/* Background Colors */
+.color1 {
+    background-color: white;
+    color: black;
+    padding: 0px 100px;
+}
+
+.color2 {
+    background-color: #ecf1f5;
+    color: black;
+    padding: 0px 100px;
+}
+
+/* ================= */
+
 /* .body-text {
     font-size: 1rem;
     font-weight: 400;
@@ -49,7 +64,7 @@ body {
 }
 
 .nav-container {
-    max-width: 1000px;
+    max-width: 1250px;
     margin: 0 auto;
 }
 
@@ -117,7 +132,7 @@ nav ul li ul li a {
     width: 70px;
 }
 
-@media only screen and (max-width: 798px) {
+@media only screen and (max-width: 1000px) {
     .nav-mobile {
         display: block;
     }
@@ -149,7 +164,7 @@ nav ul li ul li a {
     }
 }
 
-@media screen and (min-width: 799px) {
+@media screen and (min-width: 1000px) {
     .nav-list {
         display: block !important;
     }
@@ -328,6 +343,9 @@ article {
 /* ======= */
 
 /* Hero Carousel Banner */
+.carousel {
+    margin-top: 70px;
+}
 
 .carousel .carousel-item,
 .carousel .carousel-item-hidden {
@@ -802,7 +820,6 @@ article {
 /* Eco system */
 .ecosys {
     color: black;
-    padding: 0px 100px;
 }
 
 .ecosys img {
@@ -861,11 +878,11 @@ article {
     padding: 0px 10px;
 }
 
-.eco-card-content{
+.eco-card-content {
     padding-top: 15px;
 }
 
-.eco-disc{
+.eco-disc {
     margin-top: 20px;
 }
 
@@ -945,16 +962,3 @@ article {
 }
 
 /* =========== */
-
-/* Background Colors */
-.color1 {
-    background-color: white;
-    color: black;
-}
-
-.color2 {
-    background-color: #ecf1f5;
-    color: black;
-}
-
-/* ================= */

@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+html,
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+/* Background Colors */
+.color1 {
+    background-color: white;
+    color: black;
+    padding: 0px 100px;
+    margin-top: 50px;
+}
+
+.color2 {
+    background-color: #ecf1f5;
+    color: black;
+    padding: 50px 100px;
+    margin-top: 50px;
+}
+
+.about-madeit {
+    display: flex;
+}
+
+.heading-madeit {
+    width: 1000px;
+    text-align: center;
+}
+
+.heading {
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.board-members,
+.team-members,
+.leadership {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-around;
+    align-items: flex-start;
+    text-align: center;
+}
+
+.color1 .member1 {
+    background-color: #ecf1f5;
+}
+
+.color2 .member1 {
+    background-color: white;
+}
+
+.member1 img {
+    margin: 10px;
+    width: 30vw;
+    border-radius: 10px;
+}
+
+.member1 {
+    margin: 20px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.2;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.member1 .member-role {
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+.member1 .member-place {
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.member1 a {
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.member1:hover {
+    transform: scale(1.1);
+}
