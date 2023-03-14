@@ -1,3 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+html,
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+.protfolio{
+    padding: 50px 100px;
+}
+
 .options {
     display: flex;
     flex-direction: row;
@@ -7,11 +19,18 @@
     align-items: center;
 }
 
-.group {
+.button,
+.button1{
+    margin: 10px;
+}
+
+.group,
+.group1 {
     display: none;
 }
 
-.group.show {
+.group.show,
+.group1.show {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
